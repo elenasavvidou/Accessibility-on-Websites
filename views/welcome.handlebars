@@ -1,0 +1,23 @@
+<div class="image"><div>
+    <h3 id="access"> ACCESIBILITY ON WEBSITES </h3>
+</div></a>
+<div id="textontop">
+
+    <h2 class="register"> Please register to sign the petition </h2>
+    <section class="inputs">
+        <form action="/register" method="post">
+            <input id="input1" type="text" placeholder="First Name" name="first">
+            <input id="input2" type="text" placeholder="Last Name" name="last">
+            <input id="input3" type="text" placeholder="Email" name="email">
+            <input id="input4" type="password" placeholder="Password" name="password">
+            <button id="input5" type="Register">Sign up</button>
+        </from>
+    </section>
+    <a class= "loglink" href = "/login">Login here</a>
+    <div class="overlay"></div>
+
+    {{#error}}
+    <p class="error"> Please Complete </p>
+    {{/error}}
+    
+</div>

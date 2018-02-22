@@ -1,0 +1,15 @@
+<h1 id="hello"> Hello and Login! </h1>
+
+<form action="/login" method="post">
+    <input placeholder="email" type="text" name="email" value="">
+    <input placeholder="password" type="password" name="password" value="">
+    <button type="submit" name="button"> Login! </button>
+</form>
+
+{{#error}}
+<p class="error"> nothing is filed in yet </p>
+{{/error}}
+
+{{#newerror}}
+<p class="error"> Wrong password or username </p>
+{{/newerror}}

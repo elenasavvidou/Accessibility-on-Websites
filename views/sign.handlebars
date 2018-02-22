@@ -1,0 +1,17 @@
+<div id="form">
+
+    <h2 class='peoplesign'> Please sign below, {{first}} {{last}}</h2>
+
+    <form action="/petition" method= "POST">
+        <input type="hidden" name="signature">
+        <div id="overlay"></div>
+        <canvas id="canvas" width="400" height="80"> </canvas>
+        <button id="subsig" type="submit">Submit</button>
+        <h1 id=thankstxt>Thank you!</h1>
+    </form>
+
+    {{#anothererror}}
+    <p class="error"> Ops! Try again. </p>
+    {{/anothererror}}
+
+</div>

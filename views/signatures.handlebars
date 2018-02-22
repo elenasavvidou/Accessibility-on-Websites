@@ -1,0 +1,11 @@
+<section id ="love">
+    <ul>
+        <h1 class="whosign"> Advocates: </h1>
+
+        {{#signatures}}
+        <li class = "signli">
+            {{first}} {{last}}, {{age}}, <a href = '/signatures/{{city}}'> {{city}} </a> {{homepage}}
+        </li>
+        {{/signatures}}
+    </ul>
+</section>
